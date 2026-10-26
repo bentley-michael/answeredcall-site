@@ -1,7 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(gh pr create --title 'Replace Book a Demo CTAs with direct phone call' --body ' *)"
-    ]
-  }
-}
