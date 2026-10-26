@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Complete Your Setup — AnsweredCall</title>
+<title>Complete Your Setup — Answered Call</title>
 <link rel="icon" type="image/png" sizes="512x512" href="/favicon.png" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,14 +14,14 @@
 <body class="site-page onboarding-page">
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header"><div class="shell nav-wrap">
-  <a href="/" class="brand" aria-label="AnsweredCall home"><img src="/assets/answeredcall-mark.png" alt="" width="34" height="34"><span>AnsweredCall</span></a>
+  <a href="/" class="brand" aria-label="Answered Call home"><img src="/assets/answeredcall-mark.png" alt="" width="34" height="34"><span>Answered Call</span></a>
   <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">Open navigation</span><span></span><span></span></button>
   <nav class="site-nav" id="site-nav" aria-label="Primary navigation"><a href="/">Home</a><a href="/phone-intake/">After-Hours Receptionist</a><a href="/onboarding/">Customer setup</a><a class="nav-action" href="mailto:sales@answeredcall.us">Contact</a></nav>
 </div></header>
 <section class="setup-intro">
   <div class="wrap">
     <h1>Complete your setup</h1>
-    <p>You've paid for AnsweredCall. This form gives us what we need to build your assistant and turn on call answering. It takes about ten minutes, and someone reviews it by hand before anything goes live.</p>
+    <p>You've paid for Answered Call. This form gives us what we need to build your assistant and turn on call answering. It takes about ten minutes, and someone reviews it by hand before anything goes live.</p>
   </div>
 </section>
 
@@ -259,7 +259,7 @@
 
   <div id="summary-wrap">
     <h2>Review before submitting</h2>
-    <p class="section-note">Check your details, then submit them securely to AnsweredCall. You can also keep a copied backup.</p>
+    <p class="section-note">Check your details, then submit them securely to Answered Call. You can also keep a copied backup.</p>
     <textarea id="summary" readonly></textarea>
     <div class="actions">
       <button type="button" class="btn-primary" id="submit-btn">Submit onboarding</button>
@@ -271,7 +271,7 @@
   </div>
 </main>
 
-<footer class="site-footer"><div class="shell footer-grid"><div class="footer-brand"><a href="/" class="brand"><img src="/assets/answeredcall-mark.png" alt="" width="32" height="32"><span>AnsweredCall</span></a><p>Missed-call lead intake for service businesses.</p></div><div class="footer-links"><a href="/">AnsweredCall home</a><a href="/phone-intake/">After-Hours Receptionist</a><a href="/onboarding/">Customer setup</a><a href="mailto:sales@answeredcall.us">Contact</a></div><div class="footer-links"><a href="/privacy-policy/">Privacy</a><a href="/terms/">Terms</a></div><p class="footer-legal">© 2026 Nathan Bentley. All rights reserved.</p></div></footer>
+<footer class="site-footer"><div class="shell footer-grid"><div class="footer-brand"><a href="/" class="brand"><img src="/assets/answeredcall-mark.png" alt="" width="32" height="32"><span>Answered Call</span></a><p>Missed-call lead intake for service businesses.</p></div><div class="footer-links"><a href="/">Answered Call home</a><a href="/phone-intake/">After-Hours Receptionist</a><a href="/onboarding/">Customer setup</a><a href="mailto:sales@answeredcall.us">Contact</a></div><div class="footer-links"><a href="/privacy-policy/">Privacy</a><a href="/terms/">Terms</a></div><p class="footer-legal">© 2026 Nathan Bentley. All rights reserved.</p></div></footer>
 <script src="/script.js"></script>
 <script>
 const form = document.getElementById('onboard-form');
@@ -340,7 +340,7 @@ form.addEventListener('submit', function(e){
   missingBox.classList.remove('show');
 
   const businessName = data.get('public_name') || data.get('legal_name') || 'New customer';
-  let lines = [`AnsweredCall onboarding — ${businessName}`, ''];
+  let lines = [`Answered Call onboarding — ${businessName}`, ''];
 
   SECTION_ORDER.forEach(([sectionTitle, fields]) => {
     lines.push(`## ${sectionTitle}`);
@@ -365,7 +365,7 @@ document.getElementById('submit-btn').addEventListener('click', async function()
   const status = document.getElementById('submit-status');
   const data = new FormData(form);
   const businessName = data.get('public_name') || data.get('legal_name') || 'New customer';
-  data.append('_subject', `AnsweredCall onboarding — ${businessName}`);
+  data.append('_subject', `Answered Call onboarding — ${businessName}`);
   if (sessionId) data.append('session_id', sessionId);
 
   button.disabled = true;
